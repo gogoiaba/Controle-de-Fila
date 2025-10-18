@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Fila</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Banco do Igor</h1>
+      <h2>Fila de Atendimento</h2>
+    </header>
+    <main>
+      <!-- coluna de controle -->
+      <div class="cards">
+        <!-- card de adicionar cliente na fila  -->
+        <fieldset>
+          <legend>Adicionar Cliente</legend>
+          <label for="nome" class="titulo-input"> Nome: </label>
+          <br />
+          <input
+            type="text"
+            name="nome"
+            id="input-nome"
+            placeholder="Nome do Cliente"
+            required
+          />
+          <br />
+          <input
+            type="checkbox"
+            name="preferencial"
+            id="checkbox-preferencial"
+          />
+          <label for="checkbox-preferencial"> Preferencial</label>;
+          <br />
+          <button type="submit" id="btn-add">Adicionar</button>
+        </fieldset>
+        <!-- card de chamar cliente e ver quem é o proximo -->
+        <fieldset>
+          <legend>Chamar Cliente</legend>
+          <p>Próximo cliente: <span id="proximo-nome"></span></p>
+          <button id="btn-chamar" disabled="disabled">Chamar</button>
+        </fieldset>
+        <!-- card com o painel de quantos tem na fila e quantos foram atendidos -->
+        <fieldset>
+          <legend>Painel</legend>
+          <p>Na Fila:<span></span></p>
+          <p>Atendidos:<span></span></p>
+        </fieldset>
+      </div>
+      <!-- coluna do display do status da fila -->
+      <div></div>
+    </main>
+    <footer>
+      <p>© 2025 Banco do Igor — v1.0</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
