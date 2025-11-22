@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Controle de Fila</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+    </style>
   </head>
 
   <body>
     <header>
       <h1>Fila-ô-Kê</h1>
-      <h2>Talentos Aguardando</h2>
     </header>
 
     <main>
       <!-- coluna de controle -->
       <div class="cards col-controle">
-        <!-- card de adicionar cliente na fila  -->
+        <!-- card de adicionar talento na fila  -->
         <fieldset>
           <legend>Adicionar Talento</legend>
+          <h3>Adicionar Talento</h3>
           <form>
             <label for="input-nome" class="titulo-input"> Nome: </label>
             <br />
@@ -46,12 +49,14 @@
         <!-- card de chamar cantor e ver quem é o proximo -->
         <fieldset>
           <legend>Chamar Cantor</legend>
-          <p>Próximo cantor: <span id="proximo-nome"></span></p>
+          <h3>Chamar Cantor</h3>
+          <p>Próximo na Fila: <span id="proximo-nome"></span></p>
           <button id="btn-chamar" disabled="disabled">Chamar</button>
         </fieldset>
         <!-- card com o painel de quantos tem na fila e quantos foram atendidos -->
         <fieldset>
           <legend>Painel</legend>
+          <h3>Painel de Controle</h3>
           <p>Na Fila:<span id="qtd-fila"></span></p>
           <p>Finalizados:<span id="qtd-finalizados"></span></p>
         </fieldset>
