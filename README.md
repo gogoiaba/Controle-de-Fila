@@ -1,43 +1,97 @@
-# Controle de Fila  
+🎤 Fila-ô-Kê
 
-**Sistema de controle de atendimento com opção de prioridade preferencial.**  
-Projeto desenvolvido para exercitar boas práticas de **HTML semântico**, **organização em CSS** e **lógica de programação com JavaScript puro**.  
+Sistema de gerenciamento de fila para karaokê, criado para bares, eventos e estabelecimentos que desejam organizar cantores de forma eficiente.
 
----
+📁 Sobre o Projeto
 
-## Visão Geral  
+O Fila-ô-Kê é um sistema web simples e intuitivo que permite:
 
-A aplicação permite:  
-- Adicionar clientes à fila, com ou sem prioridade;  
-- Chamar o próximo cliente em ordem de atendimento;  
-- Acompanhar os contadores de pessoas na fila e atendidas.  
+Adicionar cantores à fila (nome + música).
 
-O foco está na **clareza da estrutura**, na **semântica do código** e na **preparação para manipulação dinâmica do DOM**.  
+Visualizar quem está cantando agora.
 
----
+Gerenciar o próximo da fila.
 
-## Tecnologias  
+Acompanhar os últimos a se apresentarem.
 
-- **HTML5**  
-- **CSS3**  
-- **JavaScript (ES6+)**  
-- **Git & GitHub**  
+Mostrar tudo em um “telão” para o público.
 
----
+🚀 Tecnologias Utilizadas
 
-## Próximos Passos  
+HTML5
 
-- Implementar o script em JavaScript para gerenciar a fila e atualizar os contadores;  
-- Estilizar a interface com CSS Grid e variáveis de cor;  
-- Adicionar selo visual para clientes preferenciais;  
-- Criar feedbacks visuais para ações do usuário (botões, mensagens e estados).  
+CSS3
 
----
+JavaScript (Vanilla)
 
-## Autor  
+Estrutura focada em acessibilidade e expansão futura.
 
-**Igor Signori de Souza Sá**  
-Bancário | Desenvolvedor Front-end em formação  
+📌 Funcionalidades
+🔹 Gestão da Fila
 
-[github.com/gogoiaba](https://github.com/gogoiaba)
+Adicionar cantor com nome e música
 
+Visualizar a fila em tempo real
+
+Identificar o próximo artista
+
+🔹 Display para o Público
+
+Tela de “Cantando Agora”
+
+Lista dos próximos talentos
+
+Lista dos últimos shows
+
+🔹 Painel Administrativo
+
+Número total de talentos na fila
+
+Total de finalizados
+
+🧩 Estrutura da Aplicação
+
+index.html
+
+Estrutura semântica completa
+
+Coluna de controle + coluna de display
+
+styles.css
+
+Layout responsivo e organizado em cards
+
+Divisão clara das duas áreas principais
+
+script.js (em desenvolvimento)
+
+Lógica de fila
+
+Atualização dinâmica dos elementos
+
+Controle de eventos do sistema
+
+📈 Próximas Etapas (Roadmap)
+
+Implementar lógica completa da fila
+
+Mostrar alerta quando a fila estiver vazia
+
+Layout responsivo para tablet e TV
+
+Tema claro/escuro
+
+Suporte a playlists pré-configuradas
+
+Exportar e importar filas
+
+Versão PWA (rodar offline)
+
+📄 Licença
+
+Este projeto é distribuído sob licença MIT.
+
+🙋 Autor
+
+Desenvolvido por Igor Sá.
+Trabalho em andamento.
