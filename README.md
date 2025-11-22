@@ -1,43 +1,76 @@
-# Controle de Fila  
-
-**Sistema de controle de atendimento com opção de prioridade preferencial.**  
-Projeto desenvolvido para exercitar boas práticas de **HTML semântico**, **organização em CSS** e **lógica de programação com JavaScript puro**.  
+# 🎤 Fila-ô-Kê  
+**Sistema de Gerenciamento de Fila para Karaokê**
 
 ---
 
-## Visão Geral  
+## 📘 Visão Geral
 
-A aplicação permite:  
-- Adicionar clientes à fila, com ou sem prioridade;  
-- Chamar o próximo cliente em ordem de atendimento;  
-- Acompanhar os contadores de pessoas na fila e atendidas.  
+O **Fila-ô-Kê** é um sistema web projetado para organizar a fila de cantores em estabelecimentos com karaokê, oferecendo clareza, agilidade e uma visualização amigável tanto para o operador quanto para o público.
 
-O foco está na **clareza da estrutura**, na **semântica do código** e na **preparação para manipulação dinâmica do DOM**.  
+Ele permite gerenciar de forma eficiente quem irá cantar, quem está no palco e quem já se apresentou, proporcionando uma experiência organizada e fluida.
 
 ---
 
-## Tecnologias  
+## 🎯 Objetivos do Sistema
 
-- **HTML5**  
-- **CSS3**  
-- **JavaScript (ES6+)**  
-- **Git & GitHub**  
-
----
-
-## Próximos Passos  
-
-- Implementar o script em JavaScript para gerenciar a fila e atualizar os contadores;  
-- Estilizar a interface com CSS Grid e variáveis de cor;  
-- Adicionar selo visual para clientes preferenciais;  
-- Criar feedbacks visuais para ações do usuário (botões, mensagens e estados).  
+- Facilitar o gerenciamento da fila de apresentações.  
+- Exibir claramente os próximos participantes.  
+- Reduzir conflitos sobre ordem de chamada.  
+- Padronizar a operação de karaokês em bares e eventos.  
+- Fornecer uma interface responsiva, simples e acessível.
 
 ---
 
-## Autor  
+## 🧩 Funcionalidades Principais
 
-**Igor Signori de Souza Sá**  
-Bancário | Desenvolvedor Front-end em formação  
+### **Gestão de Participantes**
+- Cadastro de talentos (nome e música).  
+- Identificação do próximo cantor na fila.  
+- Controle de entrada e saída de participantes.
 
-[github.com/gogoiaba](https://github.com/gogoiaba)
+### **Painel Administrativo**
+- Contagem de participantes na fila.  
+- Número total de apresentações finalizadas.
 
+### **Display para o Público**
+- Exibição de “Cantando Agora”.  
+- Lista dos próximos talentos a se apresentar.  
+- Histórico dos últimos shows realizados.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** — Estrutura da interface  
+- **CSS3** — Layout, design e responsividade  
+- **JavaScript (Vanilla)** — Lógica de fila e atualização dinâmica  
+
+O projeto foi construído com foco em acessibilidade, manutenção simples e adaptação fácil para diferentes identidades visuais.
+
+---
+## 📈 Roadmap de Evolução
+
+ Implementar lógica completa da fila
+
+ Armazenamento local (localStorage)
+
+ Tema personalizável por estabelecimento
+
+ Layout otimizado para TVs e projetores
+
+ Modo Operador e Modo Telão
+
+ Importar/exportar fila
+
+ Versão PWA (instalável e offline)
+
+ Integração com catálogo de músicas
+
+## 📄 Licença
+
+Este projeto é licenciado sob a MIT License.
+
+## 👤 Autor
+
+Igor Sá
+Desenvolvedor Front-End em formação e criador do sistema Fila-ô-Kê.
