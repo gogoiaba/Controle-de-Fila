@@ -9,52 +9,74 @@
 
   <body>
     <header>
-      <h1>Banco do Igor</h1>
-      <h2>Fila de Atendimento</h2>
+      <h1>Fila-ô-Kê</h1>
+      <h2>Talentos Aguardando</h2>
     </header>
+
     <main>
       <!-- coluna de controle -->
-      <div class="cards">
+      <div class="cards col-controle">
         <!-- card de adicionar cliente na fila  -->
         <fieldset>
-          <legend>Adicionar Cliente</legend>
-          <label for="nome" class="titulo-input"> Nome: </label>
-          <br />
-          <input
-            type="text"
-            name="nome"
-            id="input-nome"
-            placeholder="Nome do Cliente"
-            required
-          />
-          <br />
-          <input
-            type="checkbox"
-            name="preferencial"
-            id="checkbox-preferencial"
-          />
-          <label for="checkbox-preferencial"> Preferencial</label>;
-          <br />
-          <button type="submit" id="btn-add">Adicionar</button>
+          <legend>Adicionar Talento</legend>
+          <form>
+            <label for="input-nome" class="titulo-input"> Nome: </label>
+            <br />
+            <input
+              type="text"
+              name="nome"
+              id="input-nome"
+              placeholder="Nome do Cantor"
+              required
+            />
+            <br />
+            <label for="input-musica" class="titulo-input"> Música: </label>
+            <br />
+            <input
+              type="text"
+              name="musica"
+              id="input-musica"
+              placeholder="Nome da Música"
+              required
+            />
+            <br />
+            <button type="submit" id="btn-add">Adicionar</button>
+          </form>
         </fieldset>
-        <!-- card de chamar cliente e ver quem é o proximo -->
+        <!-- card de chamar cantor e ver quem é o proximo -->
         <fieldset>
-          <legend>Chamar Cliente</legend>
-          <p>Próximo cliente: <span id="proximo-nome"></span></p>
+          <legend>Chamar Cantor</legend>
+          <p>Próximo cantor: <span id="proximo-nome"></span></p>
           <button id="btn-chamar" disabled="disabled">Chamar</button>
         </fieldset>
         <!-- card com o painel de quantos tem na fila e quantos foram atendidos -->
         <fieldset>
           <legend>Painel</legend>
-          <p>Na Fila:<span></span></p>
-          <p>Atendidos:<span></span></p>
+          <p>Na Fila:<span id="qtd-fila"></span></p>
+          <p>Finalizados:<span id="qtd-finalizados"></span></p>
         </fieldset>
       </div>
+
       <!-- coluna do display do status da fila -->
-      <div></div>
+      <div class="cards col-display">
+        <section class="card-display">
+          <h3>Cantando Agora</h3>
+          <h4 id="talento-atual"></h4>
+          <p id="musica-atual"></p>
+        </section>
+        <section class="card-display">
+          <h3>Próximos a Cantar</h3>
+          <ol id="lista-proximos"></ol>
+        </section>
+        <section class="card-display">
+          <h3>Últimos Shows</h3>
+          <ul id="ultimos-shows"></ul>
+        </section>
+      </div>
     </main>
+
     <footer>
-      <p>© 2025 Banco do Igor — v1.0</p>
+      <p>© 2025 Fila-ô-kê — v1.1</p>
     </footer>
     <!-- <script src="script.js"></script> -->
   </body>
